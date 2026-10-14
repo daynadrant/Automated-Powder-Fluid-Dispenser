@@ -35,7 +35,3 @@ Mechanical parts were designed in SolidWorks.
 1. Install the Arduino IDE.
 2. Install the **Adafruit Motor Shield V1** library (provides `AFMotor.h`). `Servo.h` is included with the IDE.
 3. Open `CodeASF.ino`, select your board and port, then upload.
-
-## Status
-
-This is a work-in-progress snapshot, and the emergency-stop support isn't finished. The `eStop` pin definition is commented out while the code still reads it, `Servo2` is never declared, and two `while`/`if` conditions use `=` where `==` is intended (`while (running = 1 && running2 = 1)` and `if (count = 5)`). As a result the sketch won't compile as it stands. Finishing the e-stop wiring and fixing those conditions would get it building.
